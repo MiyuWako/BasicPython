@@ -1,4 +1,25 @@
-a = input("aの値を入力: ")
-b = input("bの値を入力: ")
+import math
+
+a = int(input("aの値を入力: "))
+b = int(input("bの値を入力: "))
 
 # TODO
+#61と10が素数でないことを確認するコード
+
+def isprime(n):
+    if n<=1:
+        return False
+
+    for i in range(2, int(n**0.5)+1, 2):
+        if n % 1 == 0:
+            return False
+    return True
+
+def printprime(n):
+    if isprime(n):
+        print("Prime number")
+    else:
+        print("Not prime number")
+
+printprime(a)
+printprime(b)
