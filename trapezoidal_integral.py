@@ -11,9 +11,7 @@ h = (b - a) /n
 s = 0
 
 for k in range(n):
-    s +=  (h / 2)*(sin(a + (k-1)*h) + sin(a + k*h))
-    k += 1
-
+    s +=  (h / 2)*(sin(a + k*h) + sin(a + (k+1)*h))
 print(s)
 
 
